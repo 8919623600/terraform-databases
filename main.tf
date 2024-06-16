@@ -1,6 +1,6 @@
 
 module "mongodb" {
-    source                  = "./vendor/modules/mongodb/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
+    source                  = "./vendor/modules/docdb/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
     ENV                     = var.ENV
     AZ                      = var.AZ
     DOCDB_ENGINE_VERSION    = var.DOCDB_ENGINE_VERSION
