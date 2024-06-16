@@ -1,4 +1,4 @@
-variable "AZ" {}
+
 variable "ENV" {}
 
 
