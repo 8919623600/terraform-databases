@@ -6,6 +6,8 @@ module "docdb" {
     DOCDB_INSTANCE_COUNT    = var.DOCDB_INSTANCE_COUNT
     DOCDB_INSTANCE_TYPE     = var.DOCDB_INSTANCE_TYPE
     DOCDB_PORT              = var.DOCDB_PORT
+
+    depends_on = [module.vpc]
 }
 
 # module "mysql" {
