@@ -1,4 +1,4 @@
-ENV                   = "Dev"
+ENV                   = "dev"
 DOCDB_ENGINE_VERSION = "docdb"
 DOCDB_INSTANCE_COUNT = 1
 DOCDB_INSTANCE_TYPE  = "db.t3.medium"
