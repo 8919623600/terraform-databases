@@ -24,7 +24,7 @@ module "redis" {
 }
 
 module "mysql" {
-    source                    = "./vendor/modules/mongodb/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
+    source                    = "./vendor/modules/mysql/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
     ENV                       = var.ENV
     MYSQL_PORT                = var.MYSQL_PORT
     MYSQL_ENGINE_FAMILY       = var.MYSQL_ENGINE_FAMILY
