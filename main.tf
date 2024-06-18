@@ -18,6 +18,7 @@ module "redis" {
     PORT                    = var.PORT
     NODE_TYPE               = var.NODE_TYPE
     REDIS_FAMILY            = var.REDIS_FAMILY
+    ENGINE_VERSION                 = var.ENGINE_VERSION
     
 
 }

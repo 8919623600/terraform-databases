@@ -9,3 +9,4 @@ NODE_TYPE             = "cache.t3.small"
 REDIS_FAMILY          = "redis6.x"
 NUMBER_OF_NODES       = 1
 PORT                  = 6379
+ENGINE_VERSION        = "6.x"
