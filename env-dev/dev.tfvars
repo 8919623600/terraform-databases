@@ -20,5 +20,7 @@ MYSQL_ENGINE              = "mysql"
 MYSQL_VERSION             = 5.7
 MYSQL_SKIP_FINAL_SNAPSHOT = "true"
 
+#rabbitmq
 
-
+RABBITMQ_INSTANCE_TYPE    = "t2.micro"
+RABBITMQ_PORT             = 5672

@@ -38,9 +38,10 @@ module "mysql" {
 
 
 
-# module "rabbitmq" {
-#     source                  = "./vendor/modules/mongodb/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
-#     ENV                     = var.ENV
-#     AZ                      = var.AZ
+module "rabbitmq" {
+    source                  = "./vendor/modules/rabbitmq/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
+    ENV                     = var.ENV
+    RABBITMQ_INSTANCE_TYPE  = var.RABBITMQ_INSTANCE_TYPE
+    RABBITMQ_PORT           = var.RABBITMQ_PORT
     
-# }
+}

@@ -24,4 +24,6 @@ variable "MYSQL_ENGINE" {}
 variable "MYSQL_VERSION" {}
 variable "MYSQL_SKIP_FINAL_SNAPSHOT" {}
 
-
+#rabbitmq
+variable "RABBITMQ_INSTANCE_TYPE" {}
+variable "RABBITMQ_PORT" {}
