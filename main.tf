@@ -1,14 +1,14 @@
 
-module "docdb" {
-    source                    = "./vendor/modules/docdb/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
-    ENV                       = var.ENV
-    DOCDB_ENGINE_VERSION      = var.DOCDB_ENGINE_VERSION
-    DOCDB_INSTANCE_COUNT      = var.DOCDB_INSTANCE_COUNT
-    DOCDB_INSTANCE_TYPE       = var.DOCDB_INSTANCE_TYPE
-    DOCDB_PORT                = var.DOCDB_PORT
+# module "docdb" {
+#     source                    = "./vendor/modules/docdb/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
+#     ENV                       = var.ENV
+#     DOCDB_ENGINE_VERSION      = var.DOCDB_ENGINE_VERSION
+#     DOCDB_INSTANCE_COUNT      = var.DOCDB_INSTANCE_COUNT
+#     DOCDB_INSTANCE_TYPE       = var.DOCDB_INSTANCE_TYPE
+#     DOCDB_PORT                = var.DOCDB_PORT
 
  
-}
+# }
 
 
 # module "redis" {
@@ -38,10 +38,10 @@ module "docdb" {
 
 
 
-# module "rabbitmq" {
-#     source                  = "./vendor/modules/rabbitmq/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
-#     ENV                     = var.ENV
-#     RABBITMQ_INSTANCE_TYPE  = var.RABBITMQ_INSTANCE_TYPE
-#     RABBITMQ_PORT           = var.RABBITMQ_PORT
+module "rabbitmq" {
+    source                  = "./vendor/modules/rabbitmq/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
+    ENV                     = var.ENV
+    RABBITMQ_INSTANCE_TYPE  = var.RABBITMQ_INSTANCE_TYPE
+    RABBITMQ_PORT           = var.RABBITMQ_PORT
     
-# }
+}
