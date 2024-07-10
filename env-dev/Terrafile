@@ -1,6 +1,6 @@
-docdb:
-    source:  "https://github.com/8919623600/tf-module-docdb.git"
-    version: "main"
+# docdb:
+#     source:  "https://github.com/8919623600/tf-module-docdb.git"
+#     version: "main"
 
 
 # redis:
@@ -12,6 +12,6 @@ docdb:
 #     version: "main"
 
 
-# rabbitmq:
-#     source:  "https://github.com/8919623600/tf-module-rabbitmq.git"
-#     version: "main"
+rabbitmq:
+    source:  "https://github.com/8919623600/tf-module-rabbitmq.git"
+    version: "main"
