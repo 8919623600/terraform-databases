@@ -43,5 +43,6 @@ module "rabbitmq" {
     ENV                     = var.ENV
     RABBITMQ_INSTANCE_TYPE  = var.RABBITMQ_INSTANCE_TYPE
     RABBITMQ_PORT           = var.RABBITMQ_PORT
+    DEFAULT_VPC_CIDR        = var.DEFAULT_VPC_CIDR
     
 }
